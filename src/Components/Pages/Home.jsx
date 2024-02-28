@@ -2,7 +2,8 @@ import React from 'react'
 import bgImage from '../../assets/Bg.jpg'
 import InfiniteSlider from '../InfiniteSlider'
 import About from './About'
-import NewLaunches from '../NewLaunches'
+import NewLaunches from './NewLaunches'
+import Brands from './Brands'
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
         <InfiniteSlider />
         <About />
         <NewLaunches />
+        <Brands />
     </>
 
 
