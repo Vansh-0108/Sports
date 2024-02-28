@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className='bg-[#16292c]'>
         <hr className='border-1'/>
-        <div className='flex text-[#e6e6e6]'>
+        <div className='md:flex hidden text-[#e6e6e6]'>
             <div className='pl-10 flex flex-col items-center w-1/4'>
                 <div className='flex items-center justify-center p-2 w-[80%] mt-4'>
                     <img className='h-16 bg-[#e6e6e6] rounded-lg' src={logo} alt="" />
@@ -58,6 +58,60 @@ function Footer() {
                 <NavLink to='/' className='mx-2 p-1 text-[#e6e6e6] text-base hover:text-[#d3ad7f]'>Subtitle-4</NavLink>
             </div>
         </div>
+
+        <div className='md:hidden flex flex-col text-[#e6e6e6]'>
+            <div className='flex flex-col items-center'>
+                <div className='flex items-center justify-center p-2 mt-4'>
+                    <img className='h-16 bg-[#e6e6e6] rounded-lg' src={logo} alt="" />
+                </div>
+                <div className='flex flex-col items-center mt-2'>
+                    <div className='flex items-baseline text-[#D3AD7F]'>
+                        <i className='pt-1 text-xl fa-solid fa-phone'></i>
+                        <h2 className='pl-2 text-base text-center'>Contact </h2>
+                    </div>
+                    <div className='text-sm'>
+                        <h2 className='text-center text-sm'>+91 9876543210</h2>
+                        <h2 className='text-center text-sm'> mishasport1992@gmail.com</h2>
+                    </div>
+                </div>
+                <div className='flex flex-col items-center mt-2'>
+                    <div className='flex items-baseline text-[#D3AD7F]'>
+                        <i className='pt-1 text-xl fa-solid fa-map-pin'></i>
+                        <h2 className='pl-2 text-base text-center'>Address </h2>
+                    </div>
+                    <div className='text-sm w-full'>
+                        <h2 className='text-center text-sm'>Suraj Kund Road, </h2>
+                        <h2 className='text-center text-sm'> Meerut, Uttar Pradesh</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div className='flex flex-col p-3 items-center'>
+                <h1 className='p-1 text-[#D3AD7F] text-base font-semibold text-center'>Title-1</h1>
+                <hr className='mb-1 border-[1px] w-[30%] rounded' />
+                <NavLink to='/' className='text-[#e6e6e6] text-sm hover:text-[#d3ad7f] text-center'>Subtitle-1</NavLink>
+                <NavLink to='/' className='text-[#e6e6e6] text-sm hover:text-[#d3ad7f] text-center'>Subtitle-2</NavLink>
+                <NavLink to='/' className='text-[#e6e6e6] text-sm hover:text-[#d3ad7f] text-center'>Subtitle-3</NavLink>
+                <NavLink to='/' className='text-[#e6e6e6] text-sm hover:text-[#d3ad7f] text-center'>Subtitle-4</NavLink>
+            </div>
+            <div className='flex flex-col p-3 items-center'>
+                <h1 className='p-1 text-[#D3AD7F] text-base font-semibold text-center'>Title-2</h1>
+                <hr className='mb-1 border-[1px] w-[30%] rounded' />
+                <NavLink to='/' className='text-[#e6e6e6] text-sm hover:text-[#d3ad7f] text-center'>Subtitle-1</NavLink>
+                <NavLink to='/' className='text-[#e6e6e6] text-sm hover:text-[#d3ad7f] text-center'>Subtitle-2</NavLink>
+                <NavLink to='/' className='text-[#e6e6e6] text-sm hover:text-[#d3ad7f] text-center'>Subtitle-3</NavLink>
+                <NavLink to='/' className='text-[#e6e6e6] text-sm hover:text-[#d3ad7f] text-center'>Subtitle-4</NavLink>
+            </div>
+            <div className='flex flex-col p-3 items-center'>
+                <h1 className='p-1 text-[#D3AD7F] text-base font-semibold text-center'>Title-3</h1>
+                <hr className='mb-1 border-[1px] w-[30%] rounded' />
+                <NavLink to='/' className='text-[#e6e6e6] text-sm hover:text-[#d3ad7f] text-center'>Subtitle-1</NavLink>
+                <NavLink to='/' className='text-[#e6e6e6] text-sm hover:text-[#d3ad7f] text-center'>Subtitle-2</NavLink>
+                <NavLink to='/' className='text-[#e6e6e6] text-sm hover:text-[#d3ad7f] text-center'>Subtitle-3</NavLink>
+                <NavLink to='/' className='text-[#e6e6e6] text-sm hover:text-[#d3ad7f] text-center'>Subtitle-4</NavLink>
+            </div>
+        </div>
+
     </div>
   )
 }

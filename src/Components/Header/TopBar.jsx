@@ -3,7 +3,7 @@ import logo from '../../assets/LogoSample.png'
 
 function TopBar() {
   return (
-    <div className='flex bg-[#e6e6e6] top-0 items-center justify-between'>
+    <div className=' bg-[#e6e6e6] top-0 items-center justify-between hidden md:flex'>
       <div className='flex items-center'>
         <img className='h-[10vh] px-4 float-left' src={logo} alt="" />
         <div className=''>
