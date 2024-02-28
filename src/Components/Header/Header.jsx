@@ -8,7 +8,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
     return (
-      <header className = {` bg-[#16292c] flex items-baseline ${isOpen ? "justify-center h-screen" : "justify-end"} md:justify-between px-[10%] py-2 inset-x-0 w-full sticky top-0 z-[9999px] border-b border-[#e6e6e6]`}>
+      <header className = {` bg-[#16292c] flex items-baseline ${isOpen ? "justify-center h-screen" : "justify-end"} md:justify-between px-[10%] py-2 inset-x-0 w-full sticky top-0 z-10 border-b border-[#e6e6e6]`}>
 
         <div className = {`hidden md:flex border-2 p-2 rounded-xl justify-center items-center group hover:bg-[#D3AD7F] text-[1rem] ${!isOpen ? "block" : "hidden"}`}>
             <i className = " flex text-[#e6e6e6] cursor-pointer ml-2 group-hover:text-[#16292c]  fas fa-bars mx-2" id = "menu-btn"></i>
