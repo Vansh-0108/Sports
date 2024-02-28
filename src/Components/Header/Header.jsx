@@ -22,10 +22,13 @@ function Header() {
           <NavPointer link = '/contact' name = 'Contact' />
         </nav>
 
-        <button>
-            <div onClick={() => setIsOpen(!isOpen)} 
-            className = {`flex justify-center text-white text-[1rem] ${isOpen ? "fas fa-arrow-left mx-4" : "fas fa-bars"}`}></div>
-        </button>
+        <div className="flex justify-between w-full">
+          <img className={`h-[4vh] bg-white rounded-lg ${isOpen ? "hidden" : ""}`} src={logo} alt="" />
+          <button>
+              <div onClick={() => setIsOpen(!isOpen)} 
+              className = {`flex justify-center text-white text-[1rem] ${isOpen ? "fas fa-arrow-left mx-4" : "fas fa-bars"}`}></div>
+          </button>
+        </div>
 
         <div className={` ${isOpen ? "block" : "hidden"}`}>
             <div className="text-xl flex-grow flex flex-col items-center">
