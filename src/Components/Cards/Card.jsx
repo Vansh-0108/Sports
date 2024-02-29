@@ -2,8 +2,8 @@ import React from 'react'
 
 function Card(props) {
   return (
-    <div className='border-2 rounded-lg m-4 bg-[#e6e6e6]'>
-        <img className='rounded-xl p-2' src="https://images.pexels.com/photos/945471/pexels-photo-945471.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+    <div className='border-2 rounded-lg m-1 bg-[#e6e6e6] w-[45%] md:w-[22%]'>
+        <img className='rounded-xl p-2' src={props.img} alt="" />
         <div className='p-2 flex justify-between'>
             <div>
                 <h1 className=' text-xl'>{props.name}</h1>

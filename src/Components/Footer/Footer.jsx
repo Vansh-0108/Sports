@@ -8,8 +8,8 @@ function Footer() {
     <div className='bg-[#16292c]'>
         <hr className='border-1'/>
         <div className='md:flex hidden text-[#e6e6e6]'>
-            <div className='pl-10 flex flex-col items-center w-1/4'>
-                <div className='flex items-center justify-center p-2 w-[80%] mt-4'>
+            <div className='pl-10 flex flex-col items-center w-1/3'>
+                <div className='flex p-2 w-[80%] mt-4'>
                     <img className='h-16 bg-[#e6e6e6] rounded-lg' src={logo} alt="" />
                 </div>
                 <div className='px-2 w-[80%] m-2'>
@@ -33,7 +33,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-col p-10 w-1/4'>
+            <div className='flex flex-col p-10 w-1/3 items-center'>
                 <h1 className='m-2 p-2 text-[#D3AD7F] text-xl font-semibold'>Title-1</h1>
                 <hr className='m-1 mb-2 border-[3px] w-[30%] mx-2 rounded' />
                 <NavLink to='/' className='mx-2 p-1 text-[#e6e6e6] text-base hover:text-[#d3ad7f]'>Subtitle-1</NavLink>
@@ -41,7 +41,7 @@ function Footer() {
                 <NavLink to='/' className='mx-2 p-1 text-[#e6e6e6] text-base hover:text-[#d3ad7f]'>Subtitle-3</NavLink>
                 <NavLink to='/' className='mx-2 p-1 text-[#e6e6e6] text-base hover:text-[#d3ad7f]'>Subtitle-4</NavLink>
             </div>
-            <div className='flex flex-col p-10 w-1/4'>
+            <div className='flex flex-col p-10 w-1/3 items-center'>
                 <h1 className='m-2 p-2 text-[#D3AD7F] text-xl font-semibold'>Title-2</h1>
                 <hr className='m-1 mb-2 border-[3px] w-[30%] mx-2 rounded' />
                 <NavLink to='/' className='mx-2 p-1 text-[#e6e6e6] text-base hover:text-[#d3ad7f]'>Subtitle-1</NavLink>
@@ -49,14 +49,14 @@ function Footer() {
                 <NavLink to='/' className='mx-2 p-1 text-[#e6e6e6] text-base hover:text-[#d3ad7f]'>Subtitle-3</NavLink>
                 <NavLink to='/' className='mx-2 p-1 text-[#e6e6e6] text-base hover:text-[#d3ad7f]'>Subtitle-4</NavLink>
             </div>
-            <div className='flex flex-col p-10 w-1/4'>
+            {/* <div className='flex flex-col p-10 w-1/3 items-center'>
                 <h1 className='m-2 p-2 text-[#D3AD7F] text-xl font-semibold'>Title-3</h1>
                 <hr className='m-1 mb-2 border-[3px] w-[30%] mx-2 rounded' />
                 <NavLink to='/' className='mx-2 p-1 text-[#e6e6e6] text-base hover:text-[#d3ad7f]'>Subtitle-1</NavLink>
                 <NavLink to='/' className='mx-2 p-1 text-[#e6e6e6] text-base hover:text-[#d3ad7f]'>Subtitle-2</NavLink>
                 <NavLink to='/' className='mx-2 p-1 text-[#e6e6e6] text-base hover:text-[#d3ad7f]'>Subtitle-3</NavLink>
                 <NavLink to='/' className='mx-2 p-1 text-[#e6e6e6] text-base hover:text-[#d3ad7f]'>Subtitle-4</NavLink>
-            </div>
+            </div> */}
         </div>
 
         <div className='md:hidden flex flex-col text-[#e6e6e6]'>
@@ -81,14 +81,14 @@ function Footer() {
                 <NavLink to='/' className='text-[#e6e6e6] text-sm hover:text-[#d3ad7f] text-center'>Subtitle-3</NavLink>
                 <NavLink to='/' className='text-[#e6e6e6] text-sm hover:text-[#d3ad7f] text-center'>Subtitle-4</NavLink>
             </div>
-            <div className='flex flex-col p-3 items-center'>
+            {/* <div className='flex flex-col p-3 items-center'>
                 <h1 className='p-1 text-[#D3AD7F] text-base font-semibold text-center'>Title-3</h1>
                 <hr className='mb-1 border-[1px] w-[30%] rounded' />
                 <NavLink to='/' className='text-[#e6e6e6] text-sm hover:text-[#d3ad7f] text-center'>Subtitle-1</NavLink>
                 <NavLink to='/' className='text-[#e6e6e6] text-sm hover:text-[#d3ad7f] text-center'>Subtitle-2</NavLink>
                 <NavLink to='/' className='text-[#e6e6e6] text-sm hover:text-[#d3ad7f] text-center'>Subtitle-3</NavLink>
                 <NavLink to='/' className='text-[#e6e6e6] text-sm hover:text-[#d3ad7f] text-center'>Subtitle-4</NavLink>
-            </div>
+            </div> */}
 
             <div className='flex justify-center pb-4'>
                 <div className='flex flex-col items-center my-2'>

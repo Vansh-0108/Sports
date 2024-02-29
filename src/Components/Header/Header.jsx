@@ -7,6 +7,25 @@ function Header() {
 
   const [isOpen, setIsOpen] = useState(false);
 
+  const tabs = [
+    {
+      link: '/',
+      title: 'Home'
+    },
+    {
+      link: '/about',
+      title: 'About'
+    },
+    {
+      link: '/products',
+      title: 'Products'
+    },
+    {
+      link: '/contact',
+      title: 'Contact'
+    },
+  ]
+
     return (
       <header className = {` bg-[#16292c] flex items-baseline ${isOpen ? "justify-center h-screen" : "justify-end"} md:justify-between px-[10%] py-2 inset-x-0 w-full sticky top-0 z-10 border-b border-[#e6e6e6]`}>
 
@@ -16,13 +35,12 @@ function Header() {
         </div>
 
         <nav className = {`w-[80%] hidden md:flex justify-around ${!isOpen ? "block" : "hidden"}`}>
-          <NavPointer link = '/' name = 'Home' />
-          <NavPointer link = '/about' name = 'About' />
-          <NavPointer link = '/products' name = 'Buy Products' />
-          <NavPointer link = '/contact' name = 'Contact' />
+          {
+            tabs.map((tab, key) => <NavPointer key={key} link = {tab.link} name = {tab.title} />)
+          }
         </nav>
 
-        <div className="flex justify-between w-full">
+        <div className="flex md:hidden justify-between w-full">
           <img className={`h-[4vh] bg-white rounded-lg ${isOpen ? "hidden" : ""}`} src={logo} alt="" />
           <button>
               <div onClick={() => setIsOpen(!isOpen)} 
@@ -35,18 +53,9 @@ function Header() {
               <div className = {`flex border-2 p-2 rounded-xl justify-center items-center group text-[1rem]`}>
                   <h1 className="mx-2 text-[#e6e6e6] uppercase group-hover:text-[#16292c] font-bold">Catalogue</h1>
               </div>
-              <NavLink to="/" className="block my-2 text-[#e6e6e6]">
-                Home
-              </NavLink>
-              <NavLink to="/about" className="block my-2 text-[#e6e6e6]">
-                About
-              </NavLink>
-              <NavLink to="/products" className="block my-2 text-[#e6e6e6]">
-                Products
-              </NavLink>
-              <NavLink to="/contact" className="block my-2 text-[#e6e6e6]">
-                Contact
-              </NavLink>
+              {
+                tabs.map((tab, key) => <NavLink key={key} to={tab.link} className="block my-2 text-[#e6e6e6]">{tab.title}</NavLink>)
+              }
             </div>
         </div>
         
