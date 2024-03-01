@@ -54,7 +54,7 @@ function Header() {
                   <h1 className="mx-2 text-[#e6e6e6] uppercase group-hover:text-[#16292c] font-bold">Catalogue</h1>
               </div>
               {
-                tabs.map((tab, key) => <NavLink key={key} to={tab.link} className="block my-2 text-[#e6e6e6]">{tab.title}</NavLink>)
+                tabs.map((tab, key) => <NavLink  key={key} to={tab.link} className="block my-2 text-[#e6e6e6]">{tab.title}</NavLink>)
               }
             </div>
         </div>
