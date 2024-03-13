@@ -4,7 +4,7 @@ import Card from '../Cards/Card';
 
 function AllProducts() {
 
-    const [products, setProducts] = useState([]);
+    // const [products, setProducts] = useState([]);
 
     const [state, setState] = useState({
         searchkey: '',
@@ -12,7 +12,7 @@ function AllProducts() {
     })
 
     const handleChange = (e) => {
-        const result = products.filter((product) => {
+        const result = list.filter((product) => {
             if(e.target.value === '') return product
             return product.title.toLowerCase().includes(e.target.value.toLowerCase())
         })
@@ -31,15 +31,15 @@ function AllProducts() {
     const getAllProducts = async () => {
         const data = await fetch('https://fakestoreapi.com/products')
             .then((res) => res.json())
-        setProducts(data);
+        // setProducts(data);
+        setState({
+            searchkey: '',
+            list: data
+        })
     }
 
     useEffect(() => {
-        getAllProducts();
-        setState({
-            searchkey: '',
-            list: products
-        })
+        getAllProducts();   
     }, [])
 
   return (
