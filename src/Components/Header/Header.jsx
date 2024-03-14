@@ -1,11 +1,13 @@
-import React, { useState } from "react";
-import {Link, NavLink} from 'react-router-dom'
+import React, { useEffect, useState } from "react";
+import {Link, NavLink, useLocation} from 'react-router-dom'
 import logo from '../../assets/LogoSample.png';
 import NavPointer from "./NavPointer";
 
 function Header() {
 
   const [isOpen, setIsOpen] = useState(false);
+
+  const location = useLocation();
 
   const tabs = [
     {
@@ -25,6 +27,11 @@ function Header() {
       title: 'Contact'
     },
   ]
+
+  useEffect(() => {
+    setIsOpen(false);
+    console.log(`The current route is ${location}`);
+  }, [])
 
     return (
       <header className = {` bg-[#16292c] flex items-baseline ${isOpen ? "justify-center h-screen" : "justify-end"} md:justify-between px-[10%] py-2 inset-x-0 w-full sticky top-0 z-10 border-b border-[#e6e6e6]`}>

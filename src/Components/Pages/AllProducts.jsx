@@ -98,7 +98,7 @@ function AllProducts() {
             </div>
         </div>
 
-        <div className='bg-[#16292c] mx-4 mt-4 flex flex-col items-baseline pb-2'>
+        <div className='bg-[#16292c] mx-4 mt-4 flex flex-col items-baseline mb-4 min-h-screen'>
             <h1 className='font-bold px-12 mt-4 text-[#e6e6e6] text-2xl'>All Products</h1>
             <div className='flex flex-wrap justify-center gap-2 mx-2 mt-4'>
             {
